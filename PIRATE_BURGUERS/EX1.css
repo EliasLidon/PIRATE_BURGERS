@@ -1,0 +1,215 @@
+:root{
+    --back-color: #5f7f9f;
+    --text-color: #2C3E50;
+    --main-color: #F09522;
+    --second-color: #F09522;
+    --third-color: #8E99A2;
+
+    --title-size: 38px;
+    --subtitle-size: 32px;
+    --pop-size: 18px;
+    --main-size: 18px;
+}
+@font-face {
+    font-family: 'championship';
+    src: url('FONTE/championship/Championship.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'lemon_milk';
+    src: url('FONTE/lemon_milk/LEMONMILK-Light.otf') format('opentype');
+}
+html{
+    scroll-behavior: smooth;
+}
+body,h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--back-color);
+    color: var(--text-color);
+    font-family:'lemon_milk';
+    text-align: center;
+}
+strong{
+    color: var(--second-color);
+}
+/* HEADER DA PAGINA ============================================================================================================================ */
+header{
+    width: 100%;
+    background-color: var(--second-color);
+    position: fixed;
+    top: 0;
+}
+header div{
+    display: flex;
+    width: 40%;
+    padding: 0.5%;
+    margin: 0% 0% 0% 42%;
+}
+header h1{
+    margin: 2% 0% 0% 3%;
+    color: var(--text-color);
+    font-family: 'championship';
+    font-size: var(--title-size);
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+header nav ul li{
+    margin: 25px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: var(--tamanho-fonte-texto);
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    color: var(--third-color);
+    font-size: var(--pop-size);
+}
+/* HEADER DA PAGINA ============================================================================================================================ */
+main{
+    width: 100%;
+}
+main article h2{
+    color: var(--text-color);
+    font-family: 'championship';
+    font-size: var(--subtitle-size);
+    margin: 5% 0% 0.5% 0%;
+}
+main #hist {
+   padding-top: 6%;
+}
+main article p{
+    width: 60%;
+    margin: 1% 20% 1% 20%;
+    color: var(--text-color);
+    font-size: var(--main-size);
+    text-align: justify;
+}
+.textobusca{
+    width: 70%;
+    margin: 1% 15% 1% 15%;
+    color: var(--text-color);
+    font-size: var(--main-size);
+    text-align: justify;
+}
+/* PARTE DAS MOEDAS DE OURO ==================================================================================================================== */
+main #fotos {
+    padding-top: 0.5%;
+}
+.experiencia{
+    background-color: var(--second-color);
+    width: 100%;
+    margin: 4% 0% 2% 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+}
+.textos{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.textos p{
+    font-size: 24px;
+}
+.experiencia figure{
+    background-color: var(--back-color);
+    border: 0.5px solid var(--text-color);
+    width: 60%;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.experiencia figure img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+.experiencia figure figcaption{
+    font-size: var(--main-size);
+    color: var(--third-color);
+}
+.experiencia figure:hover img{
+    transform: scale(1,1.2);
+}
+/* PARTE DAS MOEDAS DE OURO ==================================================================================================================== */
+
+/* PARTE DO HAMBUERGUER PRETO ================================================================================================================== */
+.colorido{
+    background-color: var(--text-color);
+    width: 100%;
+    margin: 4% 0% 2% 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+}
+.textos123{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.textos123 h2{
+    color: var(--third-color);
+}
+.textos123 p{
+    font-size: 24px;
+    color: var(--third-color);
+}
+.colorido figure{
+    background-color: var(--back-color);
+    border: 0.5px solid var(--third-color);
+    width: 60%;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.colorido figure img{
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+.colorido figure figcaption{
+    font-size: var(--main-size);
+    color: var(--text-color);
+}
+.colorido figure:hover img{
+    transform: scale(1,1.2);
+}
+/* PARTE DO HAMBUERGUER PRETO ================================================================================================================== */
+main #fotos {
+    padding-top: 0.5%;
+}
+.contato{
+    width: 100%;
+    background-color: var(--second-color);
+    margin: 5% 0% 5% 0%;
+}
+main article iframe{
+    width: 80%;
+    padding-bottom: 2%;
+    border: 0.5px solid var(--third-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.busca h2{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: var(--text
+    -color);
+    font-size: 50px;
+}
+
+footer{
+    width: 100%;
+    background-color: var(--text-color);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+footer p{
+    color: var(--third-color);
+}
